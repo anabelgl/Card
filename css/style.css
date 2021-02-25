@@ -1,0 +1,104 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.art-header {
+    width: 100%;
+}
+
+.art-datos {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.295);
+    width: 100%;
+    text-align: center;
+}
+
+.art-img {
+    border: 5px solid white;
+    border-radius: 60px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    margin-top: calc(-48px - 5px);
+}
+
+h1 {
+    color: var(--very-dark-desaturated-blue);
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+h1 span {
+    color: var(--dark-gray);
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.p-img {
+    color: var(--dark-grayish-blue);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.art-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.art-footer div{
+    width: 100px;
+}
+
+.art-footer p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-align: center;
+}
